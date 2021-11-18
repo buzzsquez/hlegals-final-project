@@ -1,0 +1,24 @@
+.team-main {
+    grid-column: 1 / -1;
+
+    &__title {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        color: $red;
+    }
+}
+
+@media (min-width: 992px) {
+    .team-main {
+        grid-column: 2 / -1;
+
+        &__title {
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 50px;
+            color: $red;
+            max-width: 95%;
+        }
+    }
+}

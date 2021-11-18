@@ -1,0 +1,17 @@
+.footer {
+    background-color: $gray;
+    text-align: center;
+    padding-bottom: 118px;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        padding-bottom: 80px;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer {
+        padding-bottom: 40px;
+    }
+}

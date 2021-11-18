@@ -1,0 +1,12 @@
+.bg-picture {
+    background-image: url(/app/img/keyboard.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 1440px 500px;
+}
+
+@media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+    .bg-picture {
+        background-image: url(/app/img/keyboard@2x.png);
+    }
+}

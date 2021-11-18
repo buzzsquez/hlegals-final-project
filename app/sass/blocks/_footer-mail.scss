@@ -1,0 +1,33 @@
+.footer-mail {
+    font-size: 0;
+
+    &__link {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: $blue;
+
+        &:hover {
+            animation-name: mail;
+            animation-duration: 1s;
+        }
+
+    }
+}
+
+@keyframes mail {
+    from {
+        color: $blue;
+    }
+
+    to {
+        color: $red;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-mail {
+        padding-top: 9px;
+    }
+}

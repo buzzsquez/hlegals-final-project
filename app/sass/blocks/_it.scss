@@ -1,0 +1,129 @@
+.it {
+    padding-top: 20px;
+
+    &__item-picture {
+        padding-bottom: 15px;
+
+        &-input {
+            width: 92px;
+            height: 92px;
+        }
+    }
+
+    &__item-title {
+        font-size: 32px;
+        line-height: 38px;
+        color: $red;
+        padding-bottom: 20px;
+    }
+
+    &__item-text1 {
+
+        font-size: 18px;
+        line-height: 26px;
+        color: $white;
+    }
+
+    &__item-text2 {
+
+        font-size: 18px;
+        line-height: 26px;
+        color: $white;
+        padding-top: 20px;
+    }
+
+    &__button-position {
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+            padding-bottom: 37px;
+    }
+
+    &__button-input {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: $white;
+        background: $blue;
+        box-shadow: $shadow-blue;
+        border-radius: 12px;
+        border: none;
+        padding: 16px 39px 17px 39px;
+
+        &:hover {
+            background: $blue-hover;
+            color: $white;
+            animation-name: button-it;
+            animation-duration: 1s;
+        }
+
+        &_active {
+            background: $blue-active;
+        }
+    }
+}
+
+@keyframes button-it {
+    50% {
+        font-size: 10px;
+    }
+
+    90% {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .it {
+        padding-top: 0;
+        text-align: center;
+
+        &__item-picture {
+            padding-bottom: 18px;
+        }
+
+        &__item-title {
+            font-size: 42px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        &__item-text1 {
+            font-size: 21px;
+            line-height: 30px;
+            color: $white;
+            text-align: center;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        &__item-text2 {
+            font-size: 21px;
+            line-height: 30px;
+            color: $white;
+            padding-top: 20px;
+            text-align: center;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        &__button-position {
+                display: flex;
+                justify-content: center;
+                padding-top: 40px;
+                padding-bottom: 77px;
+        }
+
+        &__button-input {
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: $white;
+            background: $blue;
+            box-shadow: $shadow-blue;
+            border-radius: 12px;
+            border: none;
+            padding: 16px 39px 17px 39px;
+        }
+    }
+}

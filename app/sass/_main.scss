@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.body {
+    font-family: 'ttnorms', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    min-width: 375px;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+        color: $red;
+    }
+}
+
+.container {
+    max-width: 1360px;
+    min-width: 375px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

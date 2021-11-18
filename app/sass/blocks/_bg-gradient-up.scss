@@ -1,0 +1,43 @@
+.bg-gradient-up {
+    background: linear-gradient(25deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+
+    &__bg-image {
+        background: url('/app/img/pbig.png') no-repeat -102px 206px;
+    }
+}
+
+@media (min-width: 460px) {
+    .bg-gradient-up {
+
+        &__bg-image {
+            background: url('/app/img/pbig.png') no-repeat -17px 206px,
+        }
+    }
+}
+
+@media (min-width: 660px) {
+    .bg-gradient-up {
+
+        &__bg-image {
+            background: url('/app/img/pbig.png') no-repeat 67px 206px,
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .bg-gradient-up {
+
+        &__bg-image {
+            background: url('/app/img/pbig.png') no-repeat 125px 270px,
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .bg-gradient-up {
+        &__bg-image {
+            background: url('/app/img/pbig.png') no-repeat 42% bottom,
+                        url(/app/img/pframe.svg) no-repeat center bottom;
+        }
+    }
+}

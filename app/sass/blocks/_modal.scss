@@ -1,0 +1,172 @@
+.modal {
+    background-color: $gray;
+    padding-top: 15px;
+    padding-bottom: 85px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+
+    &_open {
+        display: block;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        color: $red;
+        padding-bottom: 20px;
+    }
+
+    &__close {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 0;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    &__name {
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 26px;
+        color: $black;
+        font-family: inherit;
+
+        &:invalid {
+            border: 1px solid $red;
+          }
+          &:focus {
+            border: 3px solid $trans-light-gray;
+          }
+    }
+
+    &__area {
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 18px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 26px;
+        color: $black;
+        resize: none;
+        font-family: inherit;
+        height: 180px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $black;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        font-family: inherit;
+
+    }
+
+    &__tel {
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 12px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 26px;
+        color: $black;
+        font-family: inherit;
+
+        &:invalid {
+            border: 1px solid $red;
+          }
+          &:focus {
+            border: 3px solid $trans-light-gray;
+          }
+    }
+
+    &__email {
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 26px;
+        color: $gray-link;
+        font-family: inherit;
+    }
+
+    &__button-position {
+        display: flex;
+        justify-content: center;
+        margin-top: 19px;
+
+        &-input {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: $white;
+            background: $blue;
+            box-shadow: $shadow-blue;
+            border-radius: 12px;
+            border: none;
+            padding: 16px 68px 17px 69px;
+
+            &:hover {
+                background: $blue-hover;
+                color: $white;
+                animation-name: button-modal;
+                animation-duration: 1s;
+            }
+
+            &_active {
+                background: $blue-active;
+            }
+        }
+    }
+}
+
+@keyframes button-modal {
+    50% {
+        font-size: 10px;
+    }
+
+    90% {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal {
+        width: 527px;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        border-radius: 12px;
+        padding-bottom: 20px;
+
+        &__up {
+
+            &-title {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 38px;
+                color: $red;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

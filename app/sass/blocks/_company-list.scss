@@ -1,0 +1,227 @@
+.company-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+
+    &__hillel {
+        background-color: $dark-blue;
+        background-image: url(/app/img/hillel.png);
+        background-size: 158px 35px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__wannabiz {
+        background-color: $darkest-blue;
+        background-image: url(/app/img/biz.png);
+        background-size: 169px 27px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__tapgerine {
+        background-color: $orange;
+        background-image: url(/app/img/tap.svg);
+        background-size: 161px 40px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__look {
+        background-color: $grape;
+        background-image: url(/app/img/look.png);
+        background-size: 146px 34px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__orangear {
+        background-color: $light-orange;
+        background-image: url(/app/img/orange.svg);
+        background-size: 144px 36px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__adtelligent {
+        background-color: $lightest-gray;
+        background-image: url(/app/img/gent.svg);
+        background-size: 129px 33px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__clickky {
+        background-color: $dark-red;
+        background-image: url(/app/img/clickky.svg);
+        background-size: 109px 44px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__eco {
+        background-color: $olive-white;
+        background-image: url(/app/img/eco.png);
+        background-size: 104px 54px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__tek {
+        background-color: $olive-gray;
+        background-image: url(/app/img/tek.png);
+        background-size: 119px 39px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__park {
+        background-color: $darkest-purple;
+        background-image: url(/app/img/park.svg);
+        background-size: 132px 28px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__art {
+        background-color: $some-blue;
+        background-image: url(/app/img/art.png);
+        background-size: 137px 33px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__card {
+        background-color: $black;
+        background-image: url(/app/img/card.png);
+        background-size: 112px 70px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+@media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+    .company-list {
+
+        &__hillel {
+            background-image: url(/app/img/hillel@2x.png);
+        }
+
+        &__wannabiz {
+            background-image: url(/app/img/biz@2x.png);
+        }
+
+        &__look {
+            background-image: url(/app/img/look@2x.png);
+        }
+
+        &__eco {
+            background-image: url(/app/img/eco@2x.png);
+        }
+
+        &__tek {
+            background-image: url(/app/img/tek@2x.png);
+        }
+
+        &__art {
+            background-image: url(/app/img/art@2x.png);
+        }
+
+        &__card {
+            background-image: url(/app/img/card@2x.png);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .company-list {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .company-list {
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto;
+
+        &__hillel {
+            background-image: url(/app/img/hillel.png);
+            background-size: 217px 48px;
+            height: 120px;
+        }
+
+        &__wannabiz {
+            background-image: url(/app/img/biz.png);
+            background-size: 199px 32px;
+            height: 120px;
+        }
+
+        &__tapgerine {
+            background-size: 179px 44px;
+            height: 120px;
+        }
+
+        &__look {
+            background-image: url(/app/img/look.png);
+            height: 120px;
+            background-size: 180px 42px;
+        }
+
+        &__orangear {
+            background-size: 174px 44px;
+            height: 120px;
+        }
+
+        &__adtelligent {
+            background-size: 187px 47px;
+            height: 120px;
+        }
+
+        &__clickky {
+            background-size: 135px 55px;
+            height: 120px;
+        }
+
+        &__eco {
+            background-image: url(/app/img/eco.png);
+            background-size: 146px 76px;
+            height: 120px;
+        }
+
+        &__tek {
+            background-image: url(/app/img/tek.png);
+            background-size: 182px 60px;
+            height: 120px;
+        }
+
+        &__park {
+            background-size: 181px 38px;
+            height: 120px;
+        }
+
+        &__art {
+            background-image: url(/app/img/art.png);
+            background-size: 189px 46px;
+            height: 120px;
+        }
+
+        &__card {
+            background-image: url(/app/img/card.png);
+            background-size: 152px 95px;
+            height: 120px;
+        }
+    }
+}

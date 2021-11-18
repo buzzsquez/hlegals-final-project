@@ -1,0 +1,22 @@
+.law-description {
+    width: 51%;
+    padding: 52px 40px 40px 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__title {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        color: $white;
+        padding-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 21px;
+        line-height: 30px;
+        color: $white;
+    }
+}
+

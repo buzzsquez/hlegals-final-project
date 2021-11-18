@@ -1,0 +1,41 @@
+.team-link {
+    grid-column: 1 / -1;
+
+    &__forward {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $blue;
+        display: inline-flex;
+        align-items: center;
+
+        &:hover {
+            color: $red;
+            animation-name: team;
+            animation-duration: 1s;
+        }
+
+        &:hover path {
+            stroke: $red;
+        }
+    }
+}
+
+@keyframes team {
+    50% {
+        font-size: 10px;
+    }
+
+    90% {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) {
+    .team-link {
+        grid-column: 2 / -1;
+        padding-top: 40px;
+    }
+}

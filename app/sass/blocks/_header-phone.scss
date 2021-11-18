@@ -1,0 +1,27 @@
+.header-phone {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: $white;
+    display: flex;
+
+    &:hover {
+        color: $red;
+    }
+
+    &__input {
+        color: $white;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-phone::after {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $white;
+        margin: 8px 10px;
+    }
+}

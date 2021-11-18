@@ -1,0 +1,44 @@
+.header-main-menu {
+
+    &__list {
+
+        & li {
+
+            & a:hover {
+                border-bottom: 2px solid $red;
+            }
+        }
+    }
+
+.active-point {
+    border-bottom: 2px solid $red;
+    }
+
+@keyframes menu1 {
+    from {
+        border-bottom: 2px solid $white;
+    }
+
+    to {
+        border-bottom: 2px solid $red;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-main-menu {
+
+        &__list {
+
+            & a {
+                color: $blue;
+            }
+
+            & a:hover {
+                color: $red;
+            }
+        }
+    }
+}
+}
+
+

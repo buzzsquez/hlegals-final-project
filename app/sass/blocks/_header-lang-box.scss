@@ -1,0 +1,50 @@
+.header-lang-box {
+    display: flex;
+
+    &__item {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 1px;
+        color: $white;
+        padding: 5px 0 0 2px;
+        height: 23px;
+        width: 27px;
+        border-radius: 8px;
+    }
+
+    &__item_active {
+        background-color: $red;
+        color: $white;
+
+    }
+
+    &__item:hover {
+        background-color: $trans-light-gray;
+        color: $white;
+        animation-name: lang;
+        animation-duration: 1s;
+    }
+}
+
+@keyframes lang {
+    from {
+        background-color: $gray;
+    }
+
+    to {
+        background-color: $trans-light-gray;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-lang-box::after {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $white;
+        margin: 8px 8px;
+    }
+}

@@ -1,0 +1,14 @@
+.header-fb {
+    display: none;
+    font-size: 0;
+
+    &__link:hover path {
+        fill: $white;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-fb {
+        display: flex;
+    }
+}

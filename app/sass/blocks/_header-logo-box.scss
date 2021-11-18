@@ -1,0 +1,12 @@
+.header-logo-box {
+    grid-row: 2 / -1;
+    align-self: center;
+    padding-top: 20px;
+}
+
+@media (min-width: 992px) {
+    .header-logo-box {
+        grid-row: 1 / -1;
+        padding-top: 0;
+    }
+}

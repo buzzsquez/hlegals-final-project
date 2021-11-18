@@ -1,0 +1,8 @@
+.header-address {
+    color: $gray-link;
+
+    &::after {
+        background-color: $gray-link;
+    }
+}
+

@@ -1,0 +1,22 @@
+.header-address {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: $white;
+    display: none;
+
+    &::after {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $white;
+        margin: 8px 17px 8px 11px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-address {
+        display: flex;
+    }
+}

@@ -1,0 +1,56 @@
+.admin {
+    padding-top: 135px;
+    padding-bottom: 20px;
+
+    &__title {
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 45px;
+        text-align: center;
+        color: $white;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    &__link-position {
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+    }
+
+    &__link-position-arrow:hover path {
+        stroke: $red;
+
+    }
+
+    &__link-position-arrow:hover circle {
+        stroke: $red;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .admin {
+        padding-top: 155px;
+
+    &__title {
+        width: 500px;
+        margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .admin {
+
+        &__title {
+        width: 500px;
+        padding-top: 38px;
+        margin: 0 auto;
+        }
+
+        &__link-position {
+            margin-top: 290px;
+        }
+    }
+}

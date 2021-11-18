@@ -1,0 +1,23 @@
+.header-lang-box {
+
+    &__item {
+        color: $gray-link;
+    }
+
+    &__item_active {
+        background-color: $red;
+        color: $white;
+    }
+
+    &__item:hover {
+        background-color: $trans-light-gray;
+        color: $gray-link;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-lang-box::after {
+        content: '';
+        background-color: $gray-link;
+    }
+}

@@ -1,0 +1,18 @@
+.burger {
+    display: inline-flex;
+    border: none;
+    border-radius: 12px;
+    background-color: transparent;
+    justify-content: flex-end;
+    margin-right: -13px;
+
+    & path {
+    stroke: $white;
+    }
+}
+
+@media (min-width: 768px) {
+    .burger {
+        display: none;
+    }
+}

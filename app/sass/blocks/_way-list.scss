@@ -1,0 +1,60 @@
+.way-list {
+    padding-top: 18px;
+    border-top: 4px solid $trans-light-gray;
+
+
+    &__title {
+        font-size: 18px;
+        line-height: 21px;
+        color: $white;
+        padding-bottom: 10px;
+    }
+
+    &__input {
+
+        &-text {
+            font-size: 18px;
+            line-height: 26px;
+            color: $white;
+            padding: 1px 0 0 24px;
+
+            & li {
+                color: $red;
+                margin-bottom: 14px;
+
+                & span {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    .way-list {
+        padding-top: 20px;
+        padding-bottom: 45px;
+
+        &__title {
+            font-size: 24px;
+            line-height: 28px;
+            color: $white;
+            padding-bottom: 20px;
+        }
+
+        &__input {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+            column-gap: 40px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .way-list {
+        max-width: 1090px;
+        margin: 0 auto;
+    }
+}

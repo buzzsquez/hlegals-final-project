@@ -1,0 +1,20 @@
+.header-right {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4px;
+}
+
+@media (min-width: 768px) {
+    .header-right {
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-right {
+        display: flex;
+        grid-column: 2 / -1;
+        justify-content: end;
+    }
+}

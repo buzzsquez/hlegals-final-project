@@ -1,0 +1,43 @@
+.we {
+    background-image: url(/app/img/team.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 953px 290px;
+
+    &__title {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 20px;
+        text-transform: uppercase;
+        color: $white;
+        opacity: 0.8;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+        padding: 124px 0 124px 10px;
+    }
+}
+
+@media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+    .we {
+        background-image: url(/app/img/team@2x.png);
+    }
+}
+
+@media (min-width: 768px) {
+    .we {
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1030px) {
+    .we {
+
+        &__title {
+            font-size: 96px;
+            line-height: 113px;
+            letter-spacing: 63px;
+            padding: 164px 0 161px 66px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.footer-phone {
+    padding-top: 20px;
+    padding-bottom: 21px;
+
+    &__link {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: $purple-number;
+
+        &:hover {
+            animation-name: phone;
+            animation-duration: 1s;
+        }
+    }
+}
+
+@keyframes phone {
+    from {
+        color: $black;
+    }
+
+    to {
+        color: $red;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+
+        &::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $gray-link;
+            margin: 8px 10px 8px 11px;
+        }
+    }
+}

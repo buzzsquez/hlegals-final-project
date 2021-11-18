@@ -1,0 +1,52 @@
+.practice-years {
+
+    &__title {
+        font-size: 32px;
+        line-height: 38px;
+        color: $red;
+        padding-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 26px;
+        color: $black;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .practice-years {
+
+        &__title {
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .practice-years {
+
+        &__title {
+            font-size: 42px;
+            line-height: 50px;
+            color: $red;
+            padding-bottom: 20px;
+            max-width: 640px;
+            text-align: start;
+        }
+
+        &__text {
+            font-size: 21px;
+            line-height: 30px;
+            color: $black;
+            padding-bottom: 20px;
+            max-width: 640px;
+            text-align: start;
+        }
+    }
+}

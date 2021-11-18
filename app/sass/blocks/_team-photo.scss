@@ -1,0 +1,44 @@
+.team-photo {
+    grid-column: 1 / 2;
+    padding-top: 10px;
+
+    &__mob {
+        height: 60px;
+        width: 60px;
+        background-image: url(/app/img/oleksandr.png);
+        background-size: contain;
+        background-position: 50% 50%;
+        border-radius: 50%;
+    }
+
+    &__big {
+        display: none;
+    }
+}
+
+@media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+    .team-photo {
+
+        &__mob {
+            background-image: url(/app/img/oleksandr@2x.png);
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .team-photo {
+        grid-row: 1 / 5;
+        padding-top: 0;
+        padding-right: 40px;
+        margin-bottom: -3px;
+
+        &__mob {
+            display: none;
+        }
+
+        &__big {
+            display: block;
+            border-radius: 12px 0px 0px 12px;
+        }
+    }
+}

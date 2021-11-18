@@ -1,0 +1,26 @@
+.footer-fb {
+    padding-top: 19px;
+    font-size: 0;
+
+    &__link:hover path {
+        fill: $red;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-fb {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+
+        &::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $gray-link;
+            margin: 8px 12px 8px 11px;
+        }
+    }
+}

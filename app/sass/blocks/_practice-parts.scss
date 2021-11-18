@@ -1,0 +1,12 @@
+.practice-parts {
+    max-width: 1090px;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    .practice-parts {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+}

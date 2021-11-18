@@ -1,0 +1,54 @@
+.header-service-logo-box {
+    grid-row: 2 / -1;
+    align-self: center;
+    padding-top: 20px;
+    display: flex;
+
+    &__bread {
+        font-size: 19px;
+        line-height: 22px;
+        color: $white;
+        display: flex;
+
+        &::after {
+            content: url(/app/img/pslashsmall.svg);
+            margin-left: 5px;
+
+        }
+
+        &::before {
+            content: url(/app/img/slashsmall.svg);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .header-service-logo-box {
+        grid-row: 1 / -1;
+        padding-top: 0;
+
+        &__bread {
+            font-size: 38px;
+            line-height: 45px;
+            color: $white;
+            display: flex;
+
+            &::after {
+                content: url(/app/img/pslash.svg);
+                margin-left: 5px;
+
+            }
+
+            &::before {
+                content: url(/app/img/slash.svg);
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .header-service-logo-box {
+        grid-row: 1 / -1;
+        padding-top: 0;
+    }
+}

@@ -1,0 +1,9 @@
+.service-mob {
+    padding-top: 40px;
+}
+
+@media (min-width: 992px) {
+    .service-mob {
+    display: none;
+    }
+}

@@ -1,0 +1,41 @@
+.team-name {
+    grid-column: 2 / -1;
+    padding-left: 11px;
+    padding-top: 16px;
+
+    &__link {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: $gray-link;
+
+        &:hover {
+            animation-name: oleksandr;
+            animation-duration: 1s;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 22px;
+        color: $gray-link;
+        padding-top: 6px;
+    }
+}
+
+@keyframes oleksandr {
+    50% {
+        font-size: 14px;
+    }
+
+    90% {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    .team-name {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+}

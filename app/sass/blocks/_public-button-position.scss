@@ -1,0 +1,47 @@
+.public-button-position {
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    padding-bottom: 39px;
+
+    &__button {
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: $white;
+        background: $blue;
+        box-shadow: $shadow-blue;
+        border-radius: 12px;
+        border: none;
+        padding: 16px 77px 17px 77px;
+
+        &:hover {
+            background: $blue-hover;
+            animation-name: button-pub;
+            animation-duration: 1s;
+        }
+
+        &_active {
+            background: $blue-active;
+        }
+    }
+}
+
+@keyframes button-pub {
+    50% {
+        font-size: 10px;
+    }
+
+    90% {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .public-button-position {
+        padding-top: 53px;
+        padding-bottom: 45px;
+    }
+}

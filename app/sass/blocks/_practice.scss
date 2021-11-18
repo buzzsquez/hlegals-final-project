@@ -1,0 +1,11 @@
+.practice {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+@media (min-width: 992px) {
+    .practice {
+        padding-top: 34px;
+        padding-bottom: 80px;
+    }
+}

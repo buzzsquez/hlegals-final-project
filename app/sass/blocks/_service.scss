@@ -1,0 +1,11 @@
+.service {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .service {
+        display: block;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}

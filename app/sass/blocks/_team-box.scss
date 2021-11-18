@@ -1,0 +1,18 @@
+.team-box {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto 1fr;
+    margin: 0 17px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+    .team-box {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto 1fr;
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
