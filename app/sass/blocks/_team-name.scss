@@ -8,11 +8,6 @@
         font-size: 18px;
         line-height: 21px;
         color: $gray-link;
-
-        &:hover {
-            animation-name: oleksandr;
-            animation-duration: 1s;
-        }
     }
 
     &__text {
@@ -20,16 +15,6 @@
         line-height: 22px;
         color: $gray-link;
         padding-top: 6px;
-    }
-}
-
-@keyframes oleksandr {
-    50% {
-        font-size: 14px;
-    }
-
-    90% {
-        font-size: 18px;
     }
 }
 

@@ -13,13 +13,11 @@
         margin: 0 auto;
 
         &:hover {
-        color: $red;
-        animation-name: service;
-        animation-duration: 1s;
+            color: $red;
         }
 
         &:hover path {
-        stroke: $red;
+            stroke: $red;
         }
     }
 
@@ -28,16 +26,6 @@
         font-size: 32px;
         line-height: 38px;
         color: $red;
-    }
-}
-
-@keyframes service {
-    50% {
-        font-size: 10px;
-    }
-
-    90% {
-        font-size: 14px;
     }
 }
 

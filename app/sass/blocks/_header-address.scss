@@ -6,12 +6,20 @@
     display: none;
 
     &::after {
-        content: '';
+        content: "";
         width: 6px;
         height: 6px;
         border-radius: 50%;
         background-color: $white;
         margin: 8px 17px 8px 11px;
+    }
+
+    [class*="about-page"] & {
+        color: $gray-link;
+
+        &::after {
+            background-color: $gray-link;
+        }
     }
 }
 

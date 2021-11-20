@@ -15,12 +15,20 @@
                 border-bottom: 2px solid $white;
                 animation-name: menu1;
                 animation-duration: 1s;
+
+                [class*="about-page"] & {
+                    border-bottom: 2px solid $red;
+                }
             }
         }
     }
 
     .active-point {
         border-bottom: 2px solid $white;
+
+        [class*="about-page"] & {
+            border-bottom: 2px solid $red;
+        }
     }
 
     @keyframes menu1 {
@@ -52,6 +60,14 @@
                     line-height: 21px;
                     text-align: right;
                     color: $white;
+
+                    [class*="about-page"] & {
+                        color: $blue;
+
+                        &:hover {
+                            color: $red;
+                        }
+                    }
                 }
 
                 & li:first-child {

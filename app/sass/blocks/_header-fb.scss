@@ -4,6 +4,10 @@
 
     &__link:hover path {
         fill: $white;
+
+        [class*="about-page"] & {
+            fill: $blue;
+        }
     }
 }
 

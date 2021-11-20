@@ -19,23 +19,11 @@
 
         &:hover {
             background: $blue-hover;
-            animation-name: button-pub;
-            animation-duration: 1s;
         }
 
         &_active {
             background: $blue-active;
         }
-    }
-}
-
-@keyframes button-pub {
-    50% {
-        font-size: 10px;
-    }
-
-    90% {
-        font-size: 14px;
     }
 }
 

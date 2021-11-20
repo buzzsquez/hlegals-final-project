@@ -53,23 +53,11 @@
         &:hover {
             background: $blue-hover;
             color: $white;
-            animation-name: button-it;
-            animation-duration: 1s;
         }
 
         &_active {
             background: $blue-active;
         }
-    }
-}
-
-@keyframes button-it {
-    50% {
-        font-size: 10px;
-    }
-
-    90% {
-        font-size: 14px;
     }
 }
 

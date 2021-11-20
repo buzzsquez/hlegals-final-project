@@ -56,8 +56,6 @@
             &:hover {
                 background-color: #24A3FF;
                 opacity: 0.6;
-                animation-name: dots;
-                animation-duration: 1s;
             }
         }
 
@@ -65,18 +63,6 @@
             background-color: $blue;
             opacity: 1;
         }
-    }
-}
-
-@keyframes dots {
-    50% {
-        width: 14px;
-        height: 14px;
-    }
-
-    90% {
-        width: 16px;
-        height: 16px;
     }
 }
 

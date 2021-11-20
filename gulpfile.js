@@ -94,8 +94,10 @@ gulp.task('svg-sprite-prod', function () {
 });
 
 gulp.task('copy-dist', function (done) {
-    gulp.src('app/fonts/**/*.*')
+    gulp.src('app/fonts//*.*')
         .pipe(gulp.dest('dist/fonts'));
+    gulp.src('app/js//*.*')
+        .pipe(gulp.dest('dist/js'));
     done();
 });
 

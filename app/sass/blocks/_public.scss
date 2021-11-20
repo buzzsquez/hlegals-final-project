@@ -14,8 +14,6 @@
 
         &:hover {
             color: $red;
-            animation-name: public;
-            animation-duration: 1s;
         }
 
         &:hover path {
@@ -29,17 +27,6 @@
         line-height: 38px;
         color: $red;
         padding-bottom: 24px;
-    }
-}
-
-
-@keyframes public {
-    50% {
-        font-size: 10px;
-    }
-
-    90% {
-        font-size: 14px;
     }
 }
 

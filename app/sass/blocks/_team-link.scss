@@ -13,23 +13,11 @@
 
         &:hover {
             color: $red;
-            animation-name: team;
-            animation-duration: 1s;
         }
 
         &:hover path {
             stroke: $red;
         }
-    }
-}
-
-@keyframes team {
-    50% {
-        font-size: 10px;
-    }
-
-    90% {
-        font-size: 14px;
     }
 }
 

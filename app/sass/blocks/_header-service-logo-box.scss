@@ -10,10 +10,17 @@
         color: $white;
         display: flex;
 
+        [class*="about-page"] & {
+            color: $dark-purple;
+        }
+
+        &:hover {
+            color: $red;
+        }
+
         &::after {
             content: url(/app/img/pslashsmall.svg);
             margin-left: 5px;
-
         }
 
         &::before {
@@ -30,13 +37,10 @@
         &__bread {
             font-size: 38px;
             line-height: 45px;
-            color: $white;
-            display: flex;
 
             &::after {
                 content: url(/app/img/pslash.svg);
                 margin-left: 5px;
-
             }
 
             &::before {
