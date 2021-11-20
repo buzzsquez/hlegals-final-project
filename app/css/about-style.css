@@ -327,6 +327,9 @@ a:hover {
 [class*=about-page] .header-phone__input {
   color: #B3B3BA;
 }
+[class*=about-page] .header-phone__input:hover {
+  color: #F0145A;
+}
 
 @media (min-width: 768px) {
   .header-phone::after {

@@ -138,11 +138,6 @@
 @media (min-width: 768px) {
     .modal {
         width: 527px;
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1000;
         border-radius: 12px;
         padding-bottom: 20px;
 

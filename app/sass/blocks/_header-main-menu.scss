@@ -43,16 +43,10 @@
 
     @media (min-width: 768px) {
         .header-main-menu {
-            grid-column: -2 / -1;
             justify-self: flex-start;
 
             &__list {
                 display: flex;
-
-                & li {
-                    margin-left: 16px;
-                    padding-top: 14px;
-                }
 
                 & a {
                     font-weight: 500;

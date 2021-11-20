@@ -22,6 +22,10 @@
 
         [class*="about-page"] & {
             color: $gray-link;
+
+            &:hover {
+                color: $red;
+            }
         }
     }
 }

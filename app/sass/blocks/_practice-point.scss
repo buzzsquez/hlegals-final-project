@@ -31,33 +31,14 @@
 
 @media (min-width: 768px) {
     .practice-point {
-        border-top: 4px solid $separator-gray;
-        padding-top: 10px;
 
         &-position {
-            display: flex;
-            flex-direction: column;
             flex-wrap: wrap;
             align-content: center;
-            padding-bottom: 20px;
         }
 
         &-main {
             justify-content: center;
-        }
-
-        &__title {
-            font-size: 36px;
-            line-height: 42px;
-            color: $red;
-            margin-left: 10px;
-        }
-
-        &__text {
-            font-size: 18px;
-            line-height: 21px;
-            color: $dark-purple;
-            text-align: center;
         }
     }
 }
@@ -65,7 +46,6 @@
 @media (min-width: 992px) {
     .practice-point {
         border-top: none;
-        padding-top: 10px;
 
         &-position {
             border-left: 4px solid $separator-gray;

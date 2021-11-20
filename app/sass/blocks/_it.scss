@@ -79,7 +79,6 @@
         &__item-text1 {
             font-size: 21px;
             line-height: 30px;
-            color: $white;
             text-align: center;
             max-width: 850px;
             margin: 0 auto;
@@ -88,30 +87,13 @@
         &__item-text2 {
             font-size: 21px;
             line-height: 30px;
-            color: $white;
-            padding-top: 20px;
             text-align: center;
             max-width: 850px;
             margin: 0 auto;
         }
 
         &__button-position {
-                display: flex;
-                justify-content: center;
-                padding-top: 40px;
                 padding-bottom: 77px;
-        }
-
-        &__button-input {
-            font-size: 14px;
-            line-height: 17px;
-            text-align: center;
-            color: $white;
-            background: $blue;
-            box-shadow: $shadow-blue;
-            border-radius: 12px;
-            border: none;
-            padding: 16px 39px 17px 39px;
         }
     }
 }
